@@ -997,3 +997,13 @@ html, body { overflow-x: clip; }
 .sl-faq-d[open] summary::after { content: '\2212'; }
 .sl-faq-d[open] summary { color: var(--px-primary); border-bottom: 1px solid var(--px-line); }
 .sl-faq-d p { padding: 14px 18px; margin: 0; color: var(--px-body); line-height: 1.7; }
+
+/* ===== Data tables ===== */
+.content-section .sl-data { width: 100%; min-width: 520px; border-collapse: collapse; }
+.content-section .sl-data thead th { background: var(--px-primary); color: #fff; font-size: 13px; font-weight: 600; letter-spacing: .03em; padding: 12px 14px; text-align: left; vertical-align: middle; border: 0; width: auto; }
+.content-section .sl-data td { padding: 11px 14px; font-size: 14px; border-bottom: 1px solid var(--px-line); color: var(--px-body); vertical-align: middle; }
+.content-section .sl-data td:first-child { font-weight: 600; color: var(--px-ink); }
+.content-section .sl-data tbody tr:nth-child(even) td { background: var(--px-soft); }
+.content-section .sl-data tbody tr:hover td { background: #E6EBFA; }
+.content-section .table-responsive { border: 1px solid var(--px-line); border-radius: 8px; margin-bottom: 8px; }
+.sl-note { font-size: 13px; color: #7c829f; margin: 4px 0 22px; }
