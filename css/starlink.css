@@ -982,3 +982,18 @@ html, body { overflow-x: clip; }
 .sl-enq-note { margin-top: 10px; padding: 22px 24px; background: var(--px-soft); border-left: 4px solid var(--px-accent); border-radius: 8px; }
 .sl-enq-note p { margin-bottom: 14px; color: var(--px-body); }
 .sl-enq-note .hs-btn { margin-right: 8px; margin-bottom: 6px; }
+
+/* ===== Long-form product content ===== */
+.content-section .sl-list { list-style: none; padding: 0; margin: 0 0 24px; }
+.content-section .sl-list li { position: relative; padding: 7px 0 7px 28px; color: var(--px-body); line-height: 1.6; border-bottom: 1px dashed var(--px-line); }
+.content-section .sl-list li::before { content: '\f00c'; font-family: 'Font Awesome 5 Free'; font-weight: 900; position: absolute; left: 0; top: 9px; width: 18px; height: 18px; border-radius: 50%; background: var(--px-accent); color: #fff; font-size: 9px; display: grid; place-items: center; }
+.content-section .sl-ol { counter-reset: n; }
+.content-section .sl-ol li { counter-increment: n; }
+.content-section .sl-ol li::before { content: counter(n); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; background: var(--px-primary); }
+.sl-faq-d { border: 1px solid var(--px-line); border-radius: 8px; margin-bottom: 10px; background: #fff; }
+.sl-faq-d summary { cursor: pointer; padding: 14px 18px; font-weight: 600; color: var(--px-ink); list-style: none; position: relative; padding-right: 44px; }
+.sl-faq-d summary::-webkit-details-marker { display: none; }
+.sl-faq-d summary::after { content: '+'; position: absolute; right: 18px; top: 50%; transform: translateY(-50%); font-size: 20px; color: var(--px-accent); }
+.sl-faq-d[open] summary::after { content: '\2212'; }
+.sl-faq-d[open] summary { color: var(--px-primary); border-bottom: 1px solid var(--px-line); }
+.sl-faq-d p { padding: 14px 18px; margin: 0; color: var(--px-body); line-height: 1.7; }
