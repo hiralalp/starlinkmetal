@@ -284,3 +284,13 @@
     .sl-gallery { grid-template-columns: repeat(2, 1fr); }
     .sl-stats b { font-size: 34px; }
 }
+
+/* ===== Our Clients ===== */
+.sl-clients { background: #fff; }
+.sl-client-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 16px; }
+.sl-client { display: flex; align-items: center; justify-content: center; aspect-ratio: 1 / 1; padding: 16px; background: #fff; border: 1px solid #e3e6f3; border-radius: 12px; transition: transform .25s, box-shadow .25s, border-color .25s; }
+.sl-client img { max-width: 100%; max-height: 100%; object-fit: contain; filter: grayscale(.35); opacity: .92; transition: filter .25s, opacity .25s; }
+.sl-client:hover { transform: translateY(-5px); border-color: #3DB7E9; box-shadow: 0 16px 34px rgba(42,54,112,.14); }
+.sl-client:hover img { filter: none; opacity: 1; }
+@media (max-width: 991px) { .sl-client-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 575px) { .sl-client-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; } .sl-client { padding: 10px; } }
